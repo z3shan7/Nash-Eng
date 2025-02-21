@@ -1,0 +1,224 @@
+.Company_video {
+    width: 90vw;
+    margin: auto;
+    height: 90vh !important;
+    margin-top: 1.3rem;
+    position: relative;
+    overflow: hidden !important;
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px #00000014;
+    -webkit-box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.45);
+    box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.45);
+    z-index: -1;
+    // margin-top: 10px;
+
+
+}
+
+.Company_video video {
+
+    object-fit: cover;
+    width: 100%;
+    height: inherit;
+}
+
+@media (max-aspec-ratio:16/9) {
+    .Company_video video {
+        // object-fit: cover;
+        width: auto;
+        height: inherit;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .Company_video {
+        height: 50vh !important;
+    }
+
+    .globalNav .popupContainer {
+        height: 75vh;
+    }
+
+}
+
+.nash__icon {
+    // text-align: center;
+    width: 55vw;
+    display: flex;
+    gap: 7px;
+    justify-content: flex-end;
+    // align-items: flex-end;
+    margin: auto;
+    // background: rgb(224, 160, 160);
+
+}
+
+.nash-logo {
+    width: 55vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nash__icon li i {
+    font-size: 15px;
+    color: var(--old-web-page-clr);
+    padding: 8px;
+
+    margin-bottom: 12px;
+    cursor: pointer;
+    // border-radius: 50%;
+}
+
+.nash-lang {
+    color: #808080;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding-left: 9px;
+    height: 20px;
+    border-left: 1px solid #2222;
+}
+
+.nash-lang-en {
+    margin-top: 7px;
+    padding-right: 9px;
+    height: 20px;
+    font-size: 14px;
+    // font-weight: 300 !important;
+    border-right: 1px solid #2222;
+
+    color: #808080;
+}
+
+.lang-ar {
+    width: 55vw !important;
+}
+
+.cta-svg {
+    width: 20px;
+}
+
+.xl-svg {
+    width: 30px;
+}
+
+.cta {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cta__Links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta p {
+    font-size: 12px;
+    color: #444444;
+    font-family: var(--font-f);
+    padding-bottom: 4px;
+}
+
+.cta p:nth-child(2) {
+    border-top: 1px solid #2222;
+    padding-top: 4px;
+
+}
+
+.nash__icon li img {
+    margin-top: 5px;
+}
+
+.cta-numb {
+    margin-top: 10px;
+    color: #444444;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.nash__icon span {
+    font-size: 12px;
+    font-weight: bold;
+
+    color: #444444;
+}
+
+@media screen and (max-width:1150px) {
+
+    .nash-logo {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .nash__icon {
+        // text-align: center;
+        width: 95vw;
+        flex-wrap: wrap;
+        // display: flex;
+        // gap: 7px;
+        // justify-content: flex-end;
+        // // align-items: flex-end;
+        // margin: auto;
+        // background: rgb(224, 160, 160);
+
+    }
+
+        .cta {
+          padding: 10px 20px;
+        }
+
+}
+
+
+
+.Quotes {
+    width: 90vw;
+    background-color: var(--lite-shade-4);
+    padding: 15px;
+    height: 200px;
+    margin: auto;
+    border-radius: 18px;
+    margin-top: 40px;
+    // vertical-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.45);
+    box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.45);
+
+
+    &__title {
+        color: var(--dark-shade-1);
+        font-size: 2.5rem;
+        text-align: center;
+        text-shadow: -3px 7px 6px rgb(169, 169, 177);
+        font-family: var(--font-space);
+    }
+}
+
+// .Quotes {
+//     // background-image: url(/images/nash-eng-logo.png);
+//     // background-image: url(/images/nash-eng-logo.png);
+//     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../images/nash-eng-logo.png);
+//     background-position: center;
+//     background-size: 100%;
+//     // background-attachment: fixed;
+// }

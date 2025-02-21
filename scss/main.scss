@@ -1,0 +1,20 @@
+// @import 'home';
+// @import 'base';
+// @import 'base';
+
+@use 'home';
+@use 'base';
+// Home Sections
+
+@use 'home_sections/Navigation-menu';
+@use './home_sections/hero-section';
+@use './home_sections/company-info';
+@use './home_sections/services';
+@use './home_sections/project.scss';
+@use './home_sections/about-us';
+@use './home_sections/footage';
+@use './home_sections/cards';
+@use './home_sections/record';
+@use './home_sections/slider';
+@use './home_sections/testimonials';
+@use './home_sections/footer';

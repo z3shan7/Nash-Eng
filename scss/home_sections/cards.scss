@@ -1,0 +1,128 @@
+.Certifications {
+    background-color: var(--bg-lite);
+    // font-family: var(--font-f);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+
+
+
+    &__title {
+        font-size: 2.5rem;
+        font-family: var(--font-space);
+        color: #292626;
+        position: relative;
+        margin-bottom: 40px;
+        text-align: center;
+        padding-bottom: 2rem;
+        // z-index: -1;
+
+    }
+
+    &__title::after {
+        content: "";
+        height: 5px;
+        background-color: var(--font-clr);
+        width: 50px;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    &__header {
+
+        font-size: 2rem;
+
+        color: #292626;
+
+        margin-bottom: 10px;
+        font-family: var(--font-f);
+
+        text-align: center;
+    }
+
+}
+
+
+.certificate {
+    height: 473px;
+    width: 350px !important;
+
+    // box-shadow: var(--box-sh);
+    -webkit-box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+.certificate img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    // overflow: hidden;
+}
+
+.logos {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logos img {
+    width: 135px;
+    cursor: pointer;
+    filter: drop-shadow(3px 0px 2px #6772e5);
+}
+
+.logos {
+    // width: 80px;
+    // filter: (20px 20px 10px #000)
+    // filter: drop-shadow(5px 1px 5px #292626);
+    margin-bottom: 1.5rem;
+}
+
+.logos .img-2 {
+    width: 85px;
+    height: 51px;
+    // margin-top: 20px;
+}
+
+.logos span {
+    font-size: 1.5rem;
+    color: var(--lite-gray);
+
+}
+
+@media only screen and (max-width: 600px) {
+    .Certifications {
+
+        &__title {
+            font-size: 1.8rem;
+
+
+
+        }
+
+        &__header {
+            font-size: 1.5rem;
+        }
+
+        .logos .img-2 {
+            width: 100px;
+            height: 64px;
+        }
+
+        .logos img {
+            width: 150px;
+
+        }
+
+
+
+
+    }
+}
