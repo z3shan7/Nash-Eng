@@ -62,6 +62,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
 }
 
 
@@ -180,9 +182,11 @@
 
     }
 
-        .cta {
-          padding: 10px 20px;
-        }
+    .cta {
+        padding: 10px 20px;
+    }
+
+
 
 }
 
@@ -214,11 +218,37 @@
     }
 }
 
-// .Quotes {
-//     // background-image: url(/images/nash-eng-logo.png);
-//     // background-image: url(/images/nash-eng-logo.png);
-//     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../images/nash-eng-logo.png);
-//     background-position: center;
-//     background-size: 100%;
-//     // background-attachment: fixed;
-// }
+.experience__logo {
+    position: absolute;
+    right: -350px;
+    top: -30px;
+    // padding-right: 10px;
+    // margin-right: -300px;
+}
+
+
+.experience__logo img {
+    width: 170px;
+    height: 100%;
+
+}
+
+
+
+@media screen and (max-width:900px) {
+
+    .experience__logo {
+        // position: absolute;
+        right: 0;
+          top: 0px;
+        // top: 0;
+        // padding-right: 10px;
+        // margin-right: -300px;
+    }
+        .experience__logo img {
+            width: 100px;
+          
+    
+        }
+
+}

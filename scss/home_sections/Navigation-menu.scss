@@ -871,18 +871,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    /* max-width: 1400px; */
-    /* margin: auto 0; */
-    /* padding: 20px 20px; */
-    /* position: absolute; */
 
-
-    // z-index: 500;
-    /* height: 20px; */
     -webkit-perspective: 2000px;
     perspective: 2000px;
-    /* background-color: red; */
-    // background-color: var(--font-clr);
+
+
+    padding: 0 10px;
 }
 
 .globalNav ul {

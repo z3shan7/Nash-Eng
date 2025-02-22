@@ -384,6 +384,7 @@ if (screenWidth > 768) {
                         child.style.marginLeft = '-50px';
                         child.style.width = '80%';
                         child.style.textAlign = 'center';
+                        // child.style.padding = '1rem';
 
                         child.animate([
                             { opacity: 0, marginLeft: '-50px' },

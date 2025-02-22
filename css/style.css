@@ -1180,14 +1180,9 @@ html {
   font-family: Camphor, Open Sans, Segoe UI, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* max-width: 1400px; */
-  /* margin: auto 0; */
-  /* padding: 20px 20px; */
-  /* position: absolute; */
-  /* height: 20px; */
   -webkit-perspective: 2000px;
   perspective: 2000px;
-  /* background-color: red; */
+  padding: 0 10px;
 }
 
 .globalNav ul {
@@ -2880,6 +2875,7 @@ div.globalFooterCard.card-radar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .nash__icon li i {
@@ -3005,6 +3001,26 @@ div.globalFooterCard.card-radar {
   font-family: var(--font-space);
 }
 
+.experience__logo {
+  position: absolute;
+  right: -350px;
+  top: -30px;
+}
+
+.experience__logo img {
+  width: 170px;
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .experience__logo {
+    right: 0;
+    top: 0px;
+  }
+  .experience__logo img {
+    width: 100px;
+  }
+}
 .company-info {
   font-family: var(--font-plus);
 }
@@ -3205,9 +3221,15 @@ div.globalFooterCard.card-radar {
 }
 
 .txt-overlay {
-  /* position: relative; */
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)) !important;
+  position: absolute;
+  bottom: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)) !important;
   transition: 0.2s;
+}
+
+.txt-overlay p {
+  padding: 1rem;
+  font-family: var(--font-plus);
 }
 
 /* .txt-overlay:before{
