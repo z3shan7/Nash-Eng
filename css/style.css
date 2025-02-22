@@ -3228,10 +3228,10 @@ div.globalFooterCard.card-radar {
 @media (max-width: 768px) {
   .we-image-accordion {
     display: block;
-    display: none;
   }
   .we-item {
     display: flex;
+    height: 50vh;
   }
   .we-item:hover {
     flex: none;

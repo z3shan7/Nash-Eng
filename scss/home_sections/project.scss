@@ -72,11 +72,12 @@
 @media (max-width: 768px) {
     .we-image-accordion {
         display: block;
-        display: none;
+        // display: none;
     }
 
     .we-item {
         display: flex;
+        height: 50vh;
     }
 
     .we-item:hover {
