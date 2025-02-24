@@ -3176,6 +3176,9 @@ div.globalFooterCard.card-radar {
 .we-image-accordion {
   display: flex;
   justify-content: space-between;
+  -webkit-box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.45);
+  box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.45);
 }
 
 .we-item {
