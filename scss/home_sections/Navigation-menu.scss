@@ -7,7 +7,7 @@
 
 .company-logo {
     width: 320px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     filter: drop-shadow(3px 0px 2px #999edb);
     // margin-top: 15px;
 
@@ -1606,7 +1606,7 @@
     background: #fff;
     box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
     border-radius: 4px;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: relative;
     font-size: 17px;
     line-height: 40px;

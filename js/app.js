@@ -410,3 +410,37 @@ if (screenWidth > 768) {
         });
     });
 }
+
+
+// scroller top button
+
+// console.log(topLink)
+// const topLink = document.querySelector('.footer__btn')
+
+// window.addEventListener(scrollY, scrollFunction)
+// function scrollFunction() {
+//     const scrollHeight = window.scrollY;
+//     if (scrollHeight > 500) {
+//         topLink.classList.add("show-btn")
+
+
+//     }
+//     else {
+//         topLink.classList.remove("show-btn")
+//     }
+
+// }
+// console.log(scrollFunction)
+
+const topLink = document.querySelector('.footer__btn');
+
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+    const scrollHeight = window.scrollY; // Get the vertical scroll position
+    if (scrollHeight > 500) {
+        topLink.classList.add("show-btn");
+    } else {
+        topLink.classList.remove("show-btn");
+    }
+}

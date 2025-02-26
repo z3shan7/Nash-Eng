@@ -66,6 +66,10 @@
     position: relative;
 }
 
+.nash__icon li {
+
+    font-family: var(--font-space);
+}
 
 .nash__icon li i {
     font-size: 15px;
@@ -240,15 +244,16 @@
     .experience__logo {
         // position: absolute;
         right: 0;
-          top: 0px;
+        top: 0px;
         // top: 0;
         // padding-right: 10px;
         // margin-right: -300px;
     }
-        .experience__logo img {
-            width: 100px;
-          
-    
-        }
+
+    .experience__logo img {
+        width: 100px;
+
+
+    }
 
 }

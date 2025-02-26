@@ -67,15 +67,40 @@
         &--img {
             filter: invert(35%) sepia(83%) saturate(742%) hue-rotate(208deg) brightness(95%) contrast(92%);
             margin-bottom: 25px;
-            
+
             // width: 200px;
         }
-        &--txt{
+
+        &--txt {
             font-size: 2rem;
-                font-family: var(--font-space);
-                text-align: center;
-                font-weight: 500;
-                // color: var(--font-clr);
+            font-family: var(--font-space);
+            text-align: center;
+            font-weight: 500;
+            // color: var(--font-clr);
         }
     }
+}
+
+@media screen and (max-width:1100px) {
+    .our-services {
+        &__row {
+
+            gap: 100px;
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .our-services {
+        &__row {
+
+            gap: 50px;
+        }
+
+
+    }
+
 }
