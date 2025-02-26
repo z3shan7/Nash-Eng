@@ -1869,6 +1869,7 @@ html {
   box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   overflow-y: auto;
+  scrollbar-width: thin;
   position: relative;
   font-size: 17px;
   line-height: 40px;
@@ -2857,7 +2858,7 @@ div.globalFooterCard.card-radar {
   }
 }
 .nash__icon {
-  width: 55vw;
+  width: 68vw;
   display: flex;
   gap: 7px;
   justify-content: flex-end;
@@ -2865,10 +2866,10 @@ div.globalFooterCard.card-radar {
 }
 
 .nash-logo {
-  width: 55vw;
+  width: 85vw;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: relative;
 }
@@ -2968,7 +2969,7 @@ div.globalFooterCard.card-radar {
     align-items: center;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .nash__icon {
     width: 95vw;
     flex-wrap: wrap;
@@ -3002,22 +3003,34 @@ div.globalFooterCard.card-radar {
 
 .experience__logo {
   position: absolute;
-  right: -350px;
+  right: -70px;
   top: -30px;
 }
 
 .experience__logo img {
-  width: 170px;
+  width: 150px;
   height: 100%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1150px) {
   .experience__logo {
     right: 0;
     top: 0px;
   }
   .experience__logo img {
     width: 100px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .experience__logo {
+    right: 0px;
+    top: 0px;
+  }
+  .experience__logo img {
+    width: 70px;
+  }
+  .Quotes__title {
+    font-size: 1.5rem;
   }
 }
 .company-info {

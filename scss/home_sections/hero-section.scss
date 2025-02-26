@@ -46,7 +46,7 @@
 
 .nash__icon {
     // text-align: center;
-    width: 55vw;
+    width: 68vw;
     display: flex;
     gap: 7px;
     justify-content: flex-end;
@@ -57,10 +57,10 @@
 }
 
 .nash-logo {
-    width: 55vw;
+    width: 85vw;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     position: relative;
@@ -170,9 +170,13 @@
         align-items: center;
     }
 
+
+
+
+
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .nash__icon {
         // text-align: center;
         width: 95vw;
@@ -224,7 +228,7 @@
 
 .experience__logo {
     position: absolute;
-    right: -350px;
+    right: -70px;
     top: -30px;
     // padding-right: 10px;
     // margin-right: -300px;
@@ -232,14 +236,14 @@
 
 
 .experience__logo img {
-    width: 170px;
+    width: 150px;
     height: 100%;
 
 }
 
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1150px) {
 
     .experience__logo {
         // position: absolute;
@@ -254,6 +258,36 @@
         width: 100px;
 
 
+    }
+
+}
+
+@media screen and (max-width:550px) {
+
+    // .experience__logo {
+    .experience__logo {
+        right: 0px;
+        top: 0px;
+    }
+
+    // }
+
+    .experience__logo img {
+        width: 70px;
+
+
+    }
+
+    .Quotes {
+
+
+
+        &__title {
+
+            font-size: 1.5rem;
+
+
+        }
     }
 
 }
