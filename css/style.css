@@ -1954,7 +1954,7 @@ html {
 }
 
 .globalNav .mobileProducts {
-  padding: 43px 39px 15px;
+  padding: 43px 15px 15px;
 }
 
 .globalNav .mobileProducts h4 {
@@ -3012,10 +3012,19 @@ div.globalFooterCard.card-radar {
   height: 100%;
 }
 
+@media screen and (max-width: 1420px) {
+  .experience__logo {
+    right: -110px;
+    top: -30px;
+  }
+  .experience__logo img {
+    width: 130px;
+  }
+}
 @media screen and (max-width: 1150px) {
   .experience__logo {
     right: 0;
-    top: 0px;
+    top: -15px;
   }
   .experience__logo img {
     width: 100px;
@@ -3161,11 +3170,55 @@ div.globalFooterCard.card-radar {
     font-size: 1.2rem;
   }
 }
+.company-overview__company-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("/images/overview.webp");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-space);
+  margin-top: 2rem;
+}
+.company-overview__logo {
+  text-align: center;
+  padding-top: 5rem;
+  position: relative;
+}
+.company-overview__logo-img {
+  opacity: 0.18;
+  filter: drop-shadow(3px 2px 2px #808080);
+  width: 400px;
+}
+.company-overview__txt {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.company-overview__header {
+  font-size: 4.5rem;
+  color: #878787;
+  font-family: var(--font-space);
+  color: var(--old-web-page-clr);
+}
+.company-overview__para {
+  color: #555;
+  font-size: 1.3rem;
+  font-family: var(--font-plus);
+  width: 80%;
+  margin: auto;
+  margin-top: 1.3rem;
+  line-height: 1.5;
+}
+
 .our-services__row {
   display: flex;
   justify-content: center;
   align-content: center;
-  gap: 200px;
+  gap: 150px;
   flex-wrap: wrap;
 }
 .our-services__col {

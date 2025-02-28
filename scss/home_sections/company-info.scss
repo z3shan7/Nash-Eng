@@ -192,3 +192,71 @@
 
 
 }
+
+.company-overview {
+
+    &__company-bg {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("/images/overview.webp");
+        background-position: top;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-space);
+        margin-top: 2rem;
+    }
+
+    &__logo {
+        text-align: center;
+        padding-top: 5rem;
+
+        position: relative;
+    }
+
+    &__logo-img {
+        // position: absolute;
+        opacity: 0.18;
+        filter: drop-shadow(3px 2px 2px #808080);
+        width: 400px;
+        // height: 80vh;
+        // -webkit-box-shadow: 3px 2px 21px -3px rgba(0, 0, 0, 0.75);
+        // -moz-box-shadow: 3px 2px 21px -3px rgba(0, 0, 0, 0.75);
+        // box-shadow: 3px 2px 21px -3px rgba(0, 0, 0, 0.75);
+
+    }
+
+    &__txt {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__header {
+        font-size: 4.5rem;
+        color: #878787;
+        font-family: var(--font-space);
+        color: var(--old-web-page-clr);
+        // margin-bottom: 15px;
+        
+    }
+    
+    &__para {
+        color: #555;
+        font-size: 1.3rem;
+        font-family: var(--font-plus);
+        width: 80%;
+        margin: auto;
+        margin-top: 1.3rem;
+        line-height: 1.5;
+    }
+
+
+
+
+
+
+
+}

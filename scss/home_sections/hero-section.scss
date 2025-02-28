@@ -243,12 +243,31 @@
 
 
 
+@media screen and (max-width:1420px) {
+
+    .experience__logo {
+        // position: absolute;
+        right: -110px;
+        top: -30px;
+        // top: 0;
+        // padding-right: 10px;
+        // margin-right: -300px;
+    }
+
+    .experience__logo img {
+        width: 130px;
+
+
+    }
+
+}
+
 @media screen and (max-width:1150px) {
 
     .experience__logo {
         // position: absolute;
         right: 0;
-        top: 0px;
+        top: -15px;
         // top: 0;
         // padding-right: 10px;
         // margin-right: -300px;
