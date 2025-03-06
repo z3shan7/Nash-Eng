@@ -431,16 +431,22 @@
 }
 
 .process__kaizen {
-    min-height: 100vh;
+    min-height: max-content;
     display: flex;
     justify-content: center;
     gap: 30px;
 
     align-items: flex-start;
+    // background-color: var(--txt-clr);
+    background-color: var(--lite-shade-4);
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .process__kaizen img {
-    // width: 80%;
+    width: 70%;
 
     display: block;
     // min-height: 100vh;

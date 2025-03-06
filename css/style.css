@@ -1216,7 +1216,7 @@ html {
   display: none;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 950px) {
   .globalNav .navSection.primary,
   .globalNav .navSection.secondary {
     display: -webkit-box;
@@ -3332,14 +3332,20 @@ div.globalFooterCard.card-radar {
   }
 }
 .process__kaizen {
-  min-height: 100vh;
+  min-height: max-content;
   display: flex;
   justify-content: center;
   gap: 30px;
   align-items: flex-start;
+  background-color: var(--lite-shade-4);
+  width: 90vw;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .process__kaizen img {
+  width: 70%;
   display: block;
 }
 
@@ -4049,7 +4055,7 @@ span.text {
 }
 .footer__sections {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 20px;
 }
 .footer__logoLink img {
