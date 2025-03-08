@@ -3,6 +3,7 @@
     // font-family: var(--font-f);
     padding-top: 3rem;
     padding-bottom: 4rem;
+    // width: 95vw;
 
 
 
@@ -46,8 +47,8 @@
 
 
 .certificate {
-    height: 473px;
-    width: 350px !important;
+    height: fit-content;
+    width: 450px !important;
 
     // box-shadow: var(--box-sh);
     -webkit-box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.75);

@@ -3175,18 +3175,6 @@ div.globalFooterCard.card-radar {
   background-repeat: no-repeat;
   background-position: left 70%, right;
 }
-.company-overview__company-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("/images/overview.webp");
-  background-position: top;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--font-space);
-  margin-top: 2rem;
-}
 .company-overview__logo {
   text-align: center;
   padding-top: 5rem;
@@ -3830,8 +3818,8 @@ iframe {
 }
 
 .certificate {
-  height: 473px;
-  width: 350px !important;
+  height: fit-content;
+  width: 450px !important;
   -webkit-box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 12px -3px rgba(0, 0, 0, 0.75);
@@ -4056,7 +4044,27 @@ span.text {
 .footer__sections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 20px;
+  gap: 40px;
+}
+.footer__title {
+  font-size: 2.3rem;
+  font-family: var(--font-space) !important;
+  color: #292626;
+  position: relative;
+  text-align: center;
+  z-index: -1;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.footer__title::after {
+  content: "";
+  height: 5px;
+  background-color: var(--font-clr);
+  width: 50px;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .footer__logoLink img {
   width: 400px;

@@ -760,7 +760,7 @@
                                         </path>
                                     </svg>Check our recent work</h3>
                             </a>
-                            <ul class="blogPosts">
+                            <!-- <ul class="blogPosts">
                                 <li><a href="#">
                                         <span class="title ">Lorem ipsum dolor sit amet.</span>
 
@@ -773,7 +773,7 @@
                                         <span class="title ">Lorem ipsum dolor sit amet.</span>
 
                                     </a></li>
-                            </ul>
+                            </ul> -->
                         </div>
 
                     </div>
@@ -1309,7 +1309,15 @@
 
 
             </div>
-            <!-- <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+            <!-- <div class="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div> -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <!-- <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
             <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div> -->
 
 
@@ -1369,6 +1377,7 @@
             </div>
 
         </div>
+        <h3 class="slider__header footer__title"> Valued Clients</h3>
         <div class="scroller scroller2" data-direction="right" data-speed="slow">
             <div class="scroller__inner">
                 <img src="./images/major clients/chiyoda-ccc.png" alt="client logo" />
@@ -1614,25 +1623,24 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
 
-            slidesPerView: 'auto',
-            spaceBetween: 20,
-            slidesPerGroup: 1,
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
             loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
             },
-
-            breakpoints: {
-                0: {
-                    slidesPerView: 2,
-                },
-                600: {
-                    slidesPerView: 2,
-                },
-                950: {
-                    slidesPerView: 3,
-                },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             }
 
 
