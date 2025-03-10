@@ -1,0 +1,264 @@
+.company-overview {
+    background: url('/images/left.svg'), url('/images/right-decore.svg');
+    background-repeat: no-repeat;
+    background-position: left 70%, right;
+    // background-size: 40%;
+
+
+
+
+    // &__company-bg {
+    //     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("/images/overview.webp");
+    //     background-position: top;
+    //     background-size: cover;
+    //     background-attachment: fixed;
+    //     height: 70vh;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     font-family: var(--font-space);
+    //     margin-top: 2rem;
+    // }
+
+    &__logo {
+        text-align: center;
+        padding-top: 5rem;
+
+        position: relative;
+    }
+
+    &__logo-img {
+        // position: absolute;
+        opacity: 0.2;
+        filter: drop-shadow(3px 2px 2px #808080);
+        width: 400px;
+        // height: 80vh;
+        // -webkit-box-shadow: 3px 2px 21px -3px rgba(0, 0, 0, 0.75);
+        // -moz-box-shadow: 3px 2px 21px -3px rgba(0, 0, 0, 0.75);
+        // box-shadow: 3px 2px 21px -3px rgba(0, 0, 0, 0.75);
+
+    }
+
+    &__txt {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__header {
+        font-size: 4.5rem;
+        color: #878787;
+        font-family: var(--font-space);
+        color: var(--old-web-page-clr);
+
+
+    }
+
+    &__para {
+        // color: #555;
+        color: var(--txt-clr);
+        font-size: 1.3rem;
+        font-family: var(--font-plus);
+        width: 80%;
+        margin: auto;
+        margin-top: 1.3rem;
+
+        line-height: 1.5;
+    }
+
+    &__about {
+        // background-color: var(--bg-lite);
+        background-color: var(--lite-shade-4);
+        width: 90%;
+        margin: 2rem auto;
+        padding-top: 2rem;
+        padding-bottom: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
+
+    &__heading {
+        font-size: 2.1rem;
+        color: var(--txt-clr);
+        font-family: var(--font-space);
+        margin-bottom: .5rem;
+        margin-top: 1rem;
+    }
+
+    &__svgs {
+        width: 70px;
+        filter: drop-shadow(3px 0px 2px #6772e5);
+    }
+
+    &__paragraph {
+        width: 80%;
+        margin: auto;
+        font-size: 1.2rem;
+        font-family: var(--font-plus);
+        line-height: 1.5;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 1450px) {
+    .company-overview {
+        background-size: 25% !important;
+        background-position: left 60%, right;
+
+    }
+
+}
+
+@media only screen and (max-width: 1250px) {
+    .company-overview {
+        // background-size: 20% !important;
+        background-position: left 60%, right;
+
+
+        &__header {
+            font-size: 2.5rem;
+        }
+
+        &__para {
+            font-size: 1rem;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .company-overview {
+        // background-size: 20% !important;
+        background-position: left 50%, right;
+
+        &__txt {
+            top: 30%;
+        }
+
+        &__header {
+            font-size: 2.5rem;
+        }
+
+        &__para {
+            font-size: 1rem;
+            width: 100%;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .company-overview {
+
+
+        &__txt {
+            top: 20%;
+        }
+
+        &__logo {
+            padding-top: 2.5rem;
+        }
+
+        &__header {
+            font-size: 2.5rem;
+        }
+
+        &__para {
+            font-size: .7rem;
+        }
+
+        &__logo-img {
+            width: 300px;
+        }
+
+        &__about {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__heading {
+            font-size: 1.5rem;
+        }
+
+        &__paragraph {
+
+            font-size: 1rem;
+
+        }
+
+        &__svgs {
+            width: 60px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    .company-overview {
+        background-position: left 40%, right;
+
+
+        &__txt {
+            top: 20%;
+        }
+
+        &__logo {
+            padding-top: 2.5rem;
+        }
+
+        &__header {
+            font-size: 2.5rem;
+        }
+
+        &__para {
+            font-size: .7rem;
+        }
+
+        &__logo-img {
+            width: 300px;
+        }
+
+    }
+
+}
+
+.process__kaizen {
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    align-items: flex-start;
+    // background-color: var(--txt-clr);
+    background-color: var(--lite-shade-4);
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.process__kaizen img {
+    width: 70%;
+
+    display: block;
+    // min-height: 100vh;
+    // margin: auto;
+    // background-color: var(--lite-shade-4);
+}
+
+
+// Strategy and Purpose
+

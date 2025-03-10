@@ -18,3 +18,11 @@
 @use './home_sections/slider';
 @use './home_sections/testimonials';
 @use './home_sections/footer';
+
+// pages
+
+@use './pages/AboutUs';
+@use './pages/capabilites';
+@use './pages/products';
+@use './pages/major-project';
+@use './pages/accreditation';
