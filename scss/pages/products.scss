@@ -249,6 +249,10 @@
 
             width: 90%;
         }
+
+        &__gallery {
+            width: 90vw;
+        }
     }
 
 
@@ -271,6 +275,23 @@
             font-size: 1rem;
 
         }
+
+        &__des {
+            padding-top: 2rem;
+            width: 90vw;
+        }
+
+        &__des2 {
+            width: 90vw;
+        }
+
+        &__gallery {
+            width: 95vw;
+
+            &--heading {
+                font-size: 1.5rem;
+            }
+        }
     }
 
 
@@ -289,6 +310,21 @@
 
         &__para {
             font-size: .6rem;
+
+        }
+
+        &__grid {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__des {
+            font-size: .9rem;
+
+        }
+
+        &__des2 {
+            font-size: .9rem;
 
         }
     }

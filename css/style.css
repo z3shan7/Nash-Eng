@@ -4496,6 +4496,9 @@ span.text {
   .product__img {
     width: 90%;
   }
+  .product__gallery {
+    width: 90vw;
+  }
 }
 @media only screen and (max-width: 970px) {
   .product__bg {
@@ -4507,6 +4510,19 @@ span.text {
   .product__para {
     font-size: 1rem;
   }
+  .product__des {
+    padding-top: 2rem;
+    width: 90vw;
+  }
+  .product__des2 {
+    width: 90vw;
+  }
+  .product__gallery {
+    width: 95vw;
+  }
+  .product__gallery--heading {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .product__header {
@@ -4514,6 +4530,16 @@ span.text {
   }
   .product__para {
     font-size: 0.6rem;
+  }
+  .product__grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .product__des {
+    font-size: 0.9rem;
+  }
+  .product__des2 {
+    font-size: 0.9rem;
   }
 }
 
