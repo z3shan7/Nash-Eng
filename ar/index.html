@@ -136,6 +136,9 @@
                     <a class="rootLink item-company hasDropdown colorize" data-dropdown="contact">
                         الاعتمادات
                     </a>
+                    <a class="rootLink item-company  colorize" href="/ar/contact/">
+                        اتصل بنا
+                    </a>
                 </li>
 
 
@@ -723,7 +726,7 @@
                                         </path>
                                     </svg>تحقق من أعمالنا الأخيرة</h3>
                             </a>
-                             <!-- <ul class="blogPosts">
+                            <!-- <ul class="blogPosts">
                                 <li><a href="#">
                                         <span class="title ">العميل سعيد للغاية.</span>
 
@@ -965,12 +968,14 @@
                     <div class="swiper mySwiper2">
 
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="../images/11.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="../images/12.JPG" alt=""></div>
-                            <div class="swiper-slide"> <img src="../images/13.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="../images/14.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="../images/15.JPG" alt=""></div>
-                            <div class="swiper-slide"><img src="../images/16.JPG" alt=""></div>
+                            <div class="swiper-slide"><img src="../images/about-imgs/1.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="../images/about-imgs/2.webp" alt=""></div>
+                            <div class="swiper-slide"> <img src="../images/about-imgs/3.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="../images/about-imgs/4.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="../images/about-imgs/5.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="../images/about-imgs/6.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="../images/about-imgs/7.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="../images/about-imgs/8.png" alt=""></div>
                         </div>
                         <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
                         <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
@@ -1463,29 +1468,24 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
 
-            slidesPerView: '4',
-            spaceBetween: 20,
-            slidesPerGroup: 1,
+            effect: 'coverflow',
+            grabCursor: true,
             centeredSlides: true,
-            // loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+            loop: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
             },
-
-            breakpoints: {
-                0: {
-                    slidesPerView: 2,
-                },
-                600: {
-                    slidesPerView: 2,
-                },
-                950: {
-                    slidesPerView: 3,
-                },
-                2000: {
-                    slidesPerView: 8,
-                },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             }
 
 
