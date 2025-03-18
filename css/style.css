@@ -25,6 +25,13 @@
   padding-top: 5rem !important;
 }
 
+@media screen and (max-width: 1320px) {
+  .section-width {
+    max-width: 95vw;
+    margin: auto;
+    padding-top: 3rem !important;
+  }
+}
 .bg {
   background-color: #fff !important;
   border-radius: 18px;
@@ -1306,6 +1313,12 @@ html {
   padding: 0 15px;
 }
 
+@media (max-width: 1340px) {
+  .globalNav .rootLink {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
 /* @media (min-width:670px) {
     .globalNav .rootLink {
         padding: 0 calc(10px + (100vw - 670px) * .040541)
@@ -3021,7 +3034,7 @@ div.globalFooterCard.card-radar {
 }
 
 .experience__logo img {
-  width: 150px;
+  width: 125px;
   height: 100%;
 }
 
@@ -3187,7 +3200,7 @@ div.globalFooterCard.card-radar {
   display: flex;
   justify-content: center;
   align-content: center;
-  gap: 150px;
+  gap: 100px;
   flex-wrap: wrap;
 }
 .our-services__col {

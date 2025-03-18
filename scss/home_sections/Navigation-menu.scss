@@ -1021,6 +1021,14 @@
     // border-left: 2px solid black;
 }
 
+@media (max-width:1340px) {
+    .globalNav .rootLink {
+
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+
 /* @media (min-width:670px) {
     .globalNav .rootLink {
         padding: 0 calc(10px + (100vw - 670px) * .040541)

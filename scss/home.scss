@@ -29,6 +29,20 @@
 
 }
 
+@media screen and (max-width:1320px) {
+    .section-width {
+            max-width: 95vw;
+            margin: auto;
+            // margin-top: 1rem;
+            padding-top: 3rem !important;
+    
+            // filter: blur(2px);
+    
+    
+        }
+    
+}
+
 .bg {
     background-color: #fff !important;
     border-radius: 18px;
