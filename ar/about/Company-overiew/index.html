@@ -20,6 +20,37 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/css/style.css">
     <title>ناش للهندسة</title>
+    <style>
+        .swiper {
+            width: 100%;
+            height: 80vh;
+            margin-top: 1.5rem;
+            z-index: -1;
+        }
+    
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .swiper-pagination-bullet {
+            width: 250px;
+            height: 7px;
+            border-radius: 10px !important;
+            /* background-color: var( --font-clr); */
+        }
+    </style>
 </head>
 
 <body>
@@ -99,17 +130,17 @@
 
 
     <header class="globalNav noDropdownTransition" id="home">
-
-
+    
+    
         <div class="container-lg">
-
+    
             <ul class="navRoot">
                 <li class="navSection logo">
-
+    
                 </li>
-
-
-
+    
+    
+    
                 <li class="navSection primary">
                     <a class="rootLink item-products colorize" data-dropdown="products">
                         الرئيسية
@@ -121,38 +152,38 @@
                         القدرات
                     </a>
                     <a class="rootLink item-company hasDropdown colorize" data-dropdown="company">
-                        المنتج & خدمات
+                        المنتج
                     </a>
-                    <a class="rootLink item-company colorize" data-dropdown="division"
-                        href="/ar/structural-fabrication-division/">
-                        قسم تصنيع الهياكل
+                    <a class="rootLink item-company colorize hasDropdown" data-dropdown="division">
+                        قسم
                     </a>
-                    <a class="rootLink item-company  colorize" data-dropdown="division" href="/ar/forming-division/">
-                        قسم التشكيل
-                    </a>
+    
                     <a class="rootLink item-company colorize" data-dropdown="contact" href="/ar/major-projects/">
                         المشاريع الكبرى
                     </a>
                     <a class="rootLink item-company hasDropdown colorize" data-dropdown="contact">
                         الاعتمادات
                     </a>
-                </li>
-
-
-                <li class="navSection secondary">
-                    <a class="rootLink item-support colorize" href="#">
-
+                    <a class="rootLink item-company  colorize" href="/ar/contact/">
+                        اتصل بنا
                     </a>
                 </li>
-
-
-
+    
+    
+                <li class="navSection secondary">
+                    <a class="rootLink item-support colorize" href="#">
+    
+                    </a>
+                </li>
+    
+    
+    
                 <li class="navSection mobile" id="navSec">
                     <a class="rootLink item-mobileMenu colorize">
                         <h2>قائمة طعام</h2>
                     </a>
-
-
+    
+    
                     <div class="popup">
                         <div class="popupContainer">
                             <a class="popupCloseButton">يغلق</a>
@@ -174,9 +205,8 @@
                                                     </path>
                                                 </svg>نظرة عامة على الشركة
                                             </a></li>
-
-                                        <li><a class="linkContainer item-subscriptions"
-                                                href="/ar/about/strategy-purpose/">
+    
+                                        <li><a class="linkContainer item-subscriptions" href="/ar/about/strategy-purpose/">
                                                 <svg viewBox="0 0 48 48">
                                                     <path fill="#74E4A2" class="hover-fillLight"
                                                         d="M24 0c13.255 0 24 10.745 24 24S37.255 48 24 48 0 37.255 0 24 10.745 0 24 0z">
@@ -189,8 +219,7 @@
                                                     </path>
                                                 </svg>الاستراتيجية والغرض
                                             </a></li>
-                                        <li><a class="linkContainer item-connect"
-                                                href="/ar/about/facilities-machineries/">
+                                        <li><a class="linkContainer item-connect" href="/ar/about/facilities-machineries/">
                                                 <svg viewBox="0 0 48 48">
                                                     <path fill="#68D4F8" class="hover-fillLight"
                                                         d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0c1.363 0 2.698.12 4 .338V15h5v5h14.662c.218 1.302.338 2.637.338 4z">
@@ -243,14 +272,14 @@
                                                         d="M47.995 24zm0 0c0-.995-.807-1.974-1.802-1.974-1.15 0-1.8.94-1.8 1.83-.09 3.174-1.228 7.127-3.453 10.182-2.355 3.232-6.91 6.956-13.242 6.956-7.625 0-13.213-5.767-13.213-11.925 0-4.3 2.886-7.17 5.828-7.17 1.588 0 2.48.683 2.965 1.312.362.468 1.063.493 1.482.074L40.968 7.032A23.926 23.926 0 0 1 47.995 24z">
                                                     </path>
                                                 </svg>الاعتماد
-
+    
                                             </a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="mobileSecondaryNav">
-
-
+    
+    
                                 <ul>
                                     <h4>شركة</h4>
                                     <div class="linkGroup documentationGroup">
@@ -302,17 +331,17 @@
                                                 </svg>حَشد</h3>
                                             <span class="linkSub">إنه ألم في المؤخرة </span>
                                         </a>
-
+    
                                     </div>
-
+    
                                 </ul>
-
+    
                             </div>
                             <div class="mobileSecondaryNav">
-
-
+    
+    
                                 <ul class="linkList companyGroup">
-                                    <h4> منتج & خدمات</h4>
+                                    <h4>منتج</h4>
                                     <li><a class="linkContainer item-about" href="/ar/product/pressure-vessels/">
                                             <h3 class="linkTitle linkIcon"><svg width="17" height="17">
                                                     <path fill="#6772E5" class="hover-fillDark"
@@ -320,8 +349,7 @@
                                                     </path>
                                                 </svg>أوعية الضغط</h3>
                                         </a></li>
-                                    <li><a class="linkContainer item-customers"
-                                            href="/ar/product/skids-mounted-package/">
+                                    <li><a class="linkContainer item-customers" href="/ar/product/skids-mounted-package/">
                                             <h3 class="linkTitle linkIcon"><svg width="17" height="17">
                                                     <path fill="#87BBFD" class="hover-fillLight"
                                                         d="M2 16a1 1 0 0 1-1-1V9a4 4 0 0 1 8 0v7H2zm3-9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z">
@@ -359,15 +387,15 @@
                                                 </svg>هيكل فولاذي ثقيل</h3>
                                         </a></li>
                                 </ul>
-
+    
                             </div>
                             <div class="mobileSecondaryNav">
-
-
+    
+    
                                 <ul class=" linkList companyGroup">
-
+    
                                     <h4>قسم</h4>
-
+    
                                     <li><a class="linkContainer item-jobs" href="/ar/structural-fabrication-division/">
                                             <h3 class="linkTitle linkIcon"><svg width="17" height="17">
                                                     <path fill="#6772E5" class="hover-fillDark"
@@ -393,15 +421,15 @@
                                                 </svg>تشكيل المعادن</h3>
                                         </a></li>
                                 </ul>
-
+    
                             </div>
                             <div class="mobileSecondaryNav">
-
-
+    
+    
                                 <ul class=" linkList companyGroup">
-
+    
                                     <h4>الاعتماد</h4>
-
+    
                                     <li><a class="linkContainer item-jobs"
                                             href="/ar/accrediation/qualification-certification/">
                                             <h3 class="linkTitle linkIcon"><svg width="17" height="17">
@@ -428,27 +456,27 @@
                                                 </svg>إدارة الصحة والسلامة والبيئة</h3>
                                         </a></li>
                                 </ul>
-
+    
                             </div>
-
+    
                         </div>
                     </div>
                 </li>
-
-
+    
+    
             </ul>
         </div>
-
+    
         <div class="dropdownRoot">
             <div class="dropdownBackground" style="transform: translateX(452px) scaleX(0.707692) scaleY(1.1075);">
                 <div class="alternateBackground" style="transform: translateY(255.53px);"></div>
             </div>
             <div class="dropdownArrow" style="transform: translateX(636px) rotate(45deg);"></div>
             <div class="dropdownContainer" style="transform: translateX(452px); width: 368px; height: 443px;">
-
+    
                 <div class="dropdownSection left" data-dropdown="products">
                     <div class="dropdownContent">
-
+    
                         <div class="linkGroup">
                             <ul class="productsGroup">
                                 <li><a class="linkContainer item-payments" href="/ar/about/Company-overiew/"
@@ -524,45 +552,45 @@
                                         </div>
                                     </a></li>
                                 <!-- <li><a class="linkContainer item-atlas" href="#">
-                                        <svg viewBox="0 0 48 48">
-                                            <path fill="#FCD669" class="hover-fillLight"
-                                                d="M24 0c13.255 0 24 10.745 24 24S37.255 48 24 48 0 37.255 0 24 10.745 0 24 0z">
-                                            </path>
-                                            <path fill="#CE7C3A" class="hover-fillDark"
-                                                d="M24.012 1.834c.366.005.73.196.92.575l16.825 33.72c.396.79-.314 1.685-1.175 1.48L24 33.626V1.834h.01z">
-                                            </path>
-                                            <path fill="#FFF"
-                                                d="M24 1.834v31.794l-16.584 3.98A1.043 1.043 0 0 1 6.24 36.13L23.067 2.41c.195-.39.572-.58.947-.576H24z">
-                                            </path>
-                                        </svg>
-                                        <div class="productLinkContent">
-                                            <h3 class="linkTitle">المشاريع الكبرى</h3>
-                                            <p class="linkSub">محفظة متنوعة تشمل مشاريع صناعية بارزة.</p>
-                                        </div>
-                                    </a></li> -->
+                                            <svg viewBox="0 0 48 48">
+                                                <path fill="#FCD669" class="hover-fillLight"
+                                                    d="M24 0c13.255 0 24 10.745 24 24S37.255 48 24 48 0 37.255 0 24 10.745 0 24 0z">
+                                                </path>
+                                                <path fill="#CE7C3A" class="hover-fillDark"
+                                                    d="M24.012 1.834c.366.005.73.196.92.575l16.825 33.72c.396.79-.314 1.685-1.175 1.48L24 33.626V1.834h.01z">
+                                                </path>
+                                                <path fill="#FFF"
+                                                    d="M24 1.834v31.794l-16.584 3.98A1.043 1.043 0 0 1 6.24 36.13L23.067 2.41c.195-.39.572-.58.947-.576H24z">
+                                                </path>
+                                            </svg>
+                                            <div class="productLinkContent">
+                                                <h3 class="linkTitle">المشاريع الكبرى</h3>
+                                                <p class="linkSub">محفظة متنوعة تشمل مشاريع صناعية بارزة.</p>
+                                            </div>
+                                        </a></li> -->
                                 <!-- <li><a class="linkContainer item-radar" href="#">
-                                        <svg viewBox="0 0 48 48">
-                                            <path class="hover-fillLight" fill="#F6A4EB"
-                                                d="M41.364 21.886h6.538c.06.697.098 1.4.098 2.114 0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0c6.833 0 12.993 2.86 17.364 7.442v14.444z">
-                                            </path>
-                                            <path fill="#FFF"
-                                                d="M37.746 37.4a1.3 1.3 0 0 1 .92-.38c.72 0 1.303.444 1.303 1.163 0 .503-.353.982-.708 1.292-3.484 3.122-8.325 5.53-13.783 5.53-11.75 0-19.486-9.538-19.486-18.83 0-8.72 7.195-16.19 15.25-16.19s11.227 5.54 11.227 5.54L37.747 37.4z">
-                                            </path>
-                                            <path class="hover-fillDark" fill="#9251AC"
-                                                d="M47.995 24zm0 0c0-.995-.807-1.974-1.802-1.974-1.15 0-1.8.94-1.8 1.83-.09 3.174-1.228 7.127-3.453 10.182-2.355 3.232-6.91 6.956-13.242 6.956-7.625 0-13.213-5.767-13.213-11.925 0-4.3 2.886-7.17 5.828-7.17 1.588 0 2.48.683 2.965 1.312.362.468 1.063.493 1.482.074L40.968 7.032A23.926 23.926 0 0 1 47.995 24z">
-                                            </path>
-                                        </svg>
-                                        <div class="productLinkContent">
-                                            <h3 class="linkTitle">الاعتمادات <span class="new-badge">جديد</span></h3>
-                                            <p class="linkSub">نلتزم بأعلى المعايير الدولية للجودة.</p>
-                                        </div>
-                                    </a></li> -->
+                                            <svg viewBox="0 0 48 48">
+                                                <path class="hover-fillLight" fill="#F6A4EB"
+                                                    d="M41.364 21.886h6.538c.06.697.098 1.4.098 2.114 0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0c6.833 0 12.993 2.86 17.364 7.442v14.444z">
+                                                </path>
+                                                <path fill="#FFF"
+                                                    d="M37.746 37.4a1.3 1.3 0 0 1 .92-.38c.72 0 1.303.444 1.303 1.163 0 .503-.353.982-.708 1.292-3.484 3.122-8.325 5.53-13.783 5.53-11.75 0-19.486-9.538-19.486-18.83 0-8.72 7.195-16.19 15.25-16.19s11.227 5.54 11.227 5.54L37.747 37.4z">
+                                                </path>
+                                                <path class="hover-fillDark" fill="#9251AC"
+                                                    d="M47.995 24zm0 0c0-.995-.807-1.974-1.802-1.974-1.15 0-1.8.94-1.8 1.83-.09 3.174-1.228 7.127-3.453 10.182-2.355 3.232-6.91 6.956-13.242 6.956-7.625 0-13.213-5.767-13.213-11.925 0-4.3 2.886-7.17 5.828-7.17 1.588 0 2.48.683 2.965 1.312.362.468 1.063.493 1.482.074L40.968 7.032A23.926 23.926 0 0 1 47.995 24z">
+                                                </path>
+                                            </svg>
+                                            <div class="productLinkContent">
+                                                <h3 class="linkTitle">الاعتمادات <span class="new-badge">جديد</span></h3>
+                                                <p class="linkSub">نلتزم بأعلى المعايير الدولية للجودة.</p>
+                                            </div>
+                                        </a></li> -->
                             </ul>
                         </div>
-
+    
                         <ul class="linkGroup linkList prodsubGroup">
-
-
+    
+    
                             <li><a class="linkContainer item-workswith" href="/ar/about/chairman-message/">
                                     <h3 class="linkTitle linkIcon"><svg width="17" height="17">
                                             <path class="hover-fillLight" fill="#87BBFD"
@@ -577,13 +605,13 @@
                                         </svg>رسالة الرئيس</h3>
                                 </a></li>
                         </ul>
-
+    
                     </div>
                 </div>
-
+    
                 <div class="dropdownSection active" data-dropdown="developers">
                     <div class="dropdownContent">
-
+    
                         <div class="linkGroup documentationGroup">
                             <a class="linkContainer withIcon item-documentation" href="/ar/capabilities/engineering/">
                                 <h3 class="linkTitle linkIcon"><svg width="17" height="17">
@@ -595,7 +623,7 @@
                                         </path>
                                     </svg>هندسة</h3>
                                 <!-- <span class="linkSub">
-                                    and&nbsp;tools.</span> -->
+                                        and&nbsp;tools.</span> -->
                             </a>
                             <a class="linkContainer withIcon item-documentation" href="/ar/capabilities/fabrication/">
                                 <h3 class="linkTitle linkIcon"><svg width="17" height="17">
@@ -607,10 +635,9 @@
                                         </path>
                                     </svg>التصنيع</h3>
                                 <!-- <span class="linkSub">Start integrating Stripe’s products
-                                    and&nbsp;tools.</span> -->
+                                        and&nbsp;tools.</span> -->
                             </a>
-                            <a class="linkContainer withIcon item-documentation"
-                                href="/ar/capabilities/blasting-painting/">
+                            <a class="linkContainer withIcon item-documentation" href="/ar/capabilities/blasting-painting/">
                                 <h3 class="linkTitle linkIcon"><svg width="17" height="17">
                                         <path fill="#87BBFD" class="hover-fillLight"
                                             d="M.945 1.998h3.632C6.744 1.998 8.5 3.005 8.5 4.83v11.583c-.512 0-1.015-.337-1.33-.59-1.03-.828-3.057-.828-5.222-.828H.945A.944.944 0 0 1 0 14.052V2.944C0 2.422.423 2 .945 2z">
@@ -620,9 +647,9 @@
                                         </path>
                                     </svg>التفجير والطلاء</h3>
                                 <!-- <span class="linkSub">Start integrating Stripe’s products
-                                    and&nbsp;tools.</span> -->
+                                        and&nbsp;tools.</span> -->
                             </a>
-                            <a class="linkContainer withIcon item-documentation" href="/capabilities/assembly/">
+                            <a class="linkContainer withIcon item-documentation" href="/ar/capabilities/assembly/">
                                 <h3 class="linkTitle linkIcon"><svg width="17" height="17">
                                         <path fill="#87BBFD" class="hover-fillLight"
                                             d="M.945 1.998h3.632C6.744 1.998 8.5 3.005 8.5 4.83v11.583c-.512 0-1.015-.337-1.33-.59-1.03-.828-3.057-.828-5.222-.828H.945A.944.944 0 0 1 0 14.052V2.944C0 2.422.423 2 .945 2z">
@@ -631,41 +658,41 @@
                                             d="M16.055 1.998h-3.632C10.257 1.998 8.5 3.005 8.5 4.83v11.583c.512 0 1.015-.337 1.33-.59 1.03-.828 3.057-.828 5.222-.828h1.003A.944.944 0 0 0 17 14.05V2.945A.944.944 0 0 0 16.055 2z">
                                         </path>
                                     </svg>حَشد</h3>
-
+    
                             </a>
-
+    
                         </div>
-
+    
                         <!-- <ul class="linkGroup linkList developersGroup">
-                            <li><a class="linkContainer item-apiReference" href="#">
-                                    <h3 class="linkTitle linkIcon"><svg width="17" height="17">
-                                            <path d="M2 15h13M2 11h13M2 7h13M2 3h13" fill="none" stroke="#6772e5"
-                                                class="hover-strokeDark" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                        </svg>شكراً جزيلاً.</h3>
-                                </a></li>
-                            <li><a class="linkContainer item-apiStatus" href="#">
-                                    <h3 class="linkTitle linkIcon"><svg width="17" height="17">
-                                            <path d="M1 9h2.95l3-6.5 3 12 3-5.45L16 9" fill="none" stroke="#6772e5"
-                                                class="hover-strokeDark" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                        </svg>شكراً جزيلاً.</h3>
-                                </a></li>
-                            <li><a class="linkContainer item-openSource" href="#">
-                                    <h3 class="linkTitle linkIcon"><svg width="17" height="17">
-                                            <path fill="#6772E5" class="hover-fillDark"
-                                                d="M8.5 17a8.5 8.5 0 1 1 0-17 8.5 8.5 0 0 1 0 17zM6.987 6.078a.684.684 0 0 0-.968-.968L3.116 8.012a.684.684 0 0 0 0 .967l2.9 2.9a.684.684 0 0 0 .97-.967l-2.42-2.418 2.42-2.42zm6.996 1.95L11.08 5.123a.684.684 0 0 0-.966.968l2.418 2.42-2.418 2.417a.684.684 0 0 0 .967.967l2.904-2.902a.684.684 0 0 0 0-.966z">
-                                            </path>
-                                        </svg>شكراً جزيلاً.</h3>
-                                </a></li>
-                        </ul> -->
-
+                                <li><a class="linkContainer item-apiReference" href="#">
+                                        <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                                                <path d="M2 15h13M2 11h13M2 7h13M2 3h13" fill="none" stroke="#6772e5"
+                                                    class="hover-strokeDark" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>شكراً جزيلاً.</h3>
+                                    </a></li>
+                                <li><a class="linkContainer item-apiStatus" href="#">
+                                        <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                                                <path d="M1 9h2.95l3-6.5 3 12 3-5.45L16 9" fill="none" stroke="#6772e5"
+                                                    class="hover-strokeDark" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>شكراً جزيلاً.</h3>
+                                    </a></li>
+                                <li><a class="linkContainer item-openSource" href="#">
+                                        <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                                                <path fill="#6772E5" class="hover-fillDark"
+                                                    d="M8.5 17a8.5 8.5 0 1 1 0-17 8.5 8.5 0 0 1 0 17zM6.987 6.078a.684.684 0 0 0-.968-.968L3.116 8.012a.684.684 0 0 0 0 .967l2.9 2.9a.684.684 0 0 0 .97-.967l-2.42-2.418 2.42-2.42zm6.996 1.95L11.08 5.123a.684.684 0 0 0-.966.968l2.418 2.42-2.418 2.417a.684.684 0 0 0 .967.967l2.904-2.902a.684.684 0 0 0 0-.966z">
+                                                </path>
+                                            </svg>شكراً جزيلاً.</h3>
+                                    </a></li>
+                            </ul> -->
+    
                     </div>
                 </div>
-
+    
                 <div class="dropdownSection right" data-dropdown="company">
                     <div class="dropdownContent">
-
+    
                         <ul class="linkGroup linkList companyGroup">
                             <li><a class="linkContainer item-about" href="/ar/product/pressure-vessels/">
                                     <h3 class="linkTitle linkIcon"><svg width="17" height="17">
@@ -711,7 +738,7 @@
                                         </svg>هيكل فولاذي ثقيل</h3>
                                 </a></li>
                         </ul>
-
+    
                         <div class="linkGroup blogGroup">
                             <a class="linkContainer withIcon item-blog" href="#">
                                 <h3 class="linkTitle linkIcon"><svg width="17" height="17">
@@ -724,29 +751,29 @@
                                     </svg>تحقق من أعمالنا الأخيرة</h3>
                             </a>
                             <!-- <ul class="blogPosts">
-                                <li><a href="#">
-                                        <span class="title ">العميل سعيد للغاية.</span>
-
-                                    </a></li>
-                                <li><a href="#">
-                                        <span class="title ">العميل سعيد جدًا بمتابعته.</span>
-
-                                    </a></li>
-                                <li><a href="#">
-                                        <span class="title ">العميل سعيد للغاية..</span>
-
-                                    </a></li>
-                            </ul> -->
+                                    <li><a href="#">
+                                            <span class="title ">العميل سعيد للغاية.</span>
+    
+                                        </a></li>
+                                    <li><a href="#">
+                                            <span class="title ">العميل سعيد جدًا بمتابعته.</span>
+    
+                                        </a></li>
+                                    <li><a href="#">
+                                            <span class="title ">العميل سعيد للغاية..</span>
+    
+                                        </a></li>
+                                </ul>  -->
                         </div>
-
+    
                     </div>
                 </div>
-                <!-- <div class="dropdownSection right" data-dropdown="division">
+                <div class="dropdownSection right" data-dropdown="division">
                     <div class="dropdownContent">
-
+    
                         <ul class="linkGroup linkList companyGroup">
-
-
+    
+    
                             <li><a class="linkContainer item-jobs" href="/ar/accrediation/qualification-certification/">
                                     <h3 class="linkTitle linkIcon"><svg width="17" height="17">
                                             <path fill="#6772E5" class="hover-fillDark"
@@ -772,42 +799,17 @@
                                         </svg>تشكيل المعادن</h3>
                                 </a></li>
                         </ul>
-
-                        <div class="linkGroup blogGroup">
-                            <a class="linkContainer withIcon item-blog" href="#">
-                                <h3 class="linkTitle linkIcon"><svg width="17" height="17">
-                                        <path fill="#87BBFD" class="hover-fillLight"
-                                            d="M1 4h4.5v11H1.75A1.75 1.75 0 0 1 0 13.25V5a1 1 0 0 1 1-1z">
-                                        </path>
-                                        <path fill="#6772E5" class="hover-fillDark"
-                                            d="M14 15H2v-.025a2.243 2.243 0 0 0 2-2.225V3a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v9a3 3 0 0 1-3 3zm1-11H6v3h9V4z">
-                                        </path>
-                                    </svg>تحقق من أعمالنا الأخيرة</h3>
-                            </a>
-                            <ul class="blogPosts">
-                                <li><a href="#">
-                                        <span class="title ">العميل سعيد للغاية.</span>
-
-                                    </a></li>
-                                <li><a href="#">
-                                        <span class="title ">العميل سعيد جدًا بمتابعته.</span>
-
-                                    </a></li>
-                                <li><a href="#">
-                                        <span class="title ">العميل سعيد للغاية..</span>
-
-                                    </a></li>
-                            </ul>
-                        </div>
-
+    
+    
+    
                     </div>
-                </div> -->
+                </div>
                 <div class="dropdownSection right" data-dropdown="contact">
                     <div class="dropdownContent">
-
+    
                         <ul class="linkGroup linkList companyGroup">
-
-
+    
+    
                             <li><a class="linkContainer item-jobs" href="/ar/accrediation/qualification-certification/">
                                     <h3 class="linkTitle linkIcon"><svg width="17" height="17">
                                             <path fill="#6772E5" class="hover-fillDark"
@@ -832,10 +834,10 @@
                                             </path>
                                         </svg>>إدارة الصحة والسلامة والبيئ
                                     </h3>
-
+    
                                 </a></li>
                         </ul>
-
+    
                         <div class="linkGroup blogGroup">
                             <a class="linkContainer withIcon item-blog" href="#">
                                 <h3 class="linkTitle linkIcon"><svg width="17" height="17">
@@ -850,27 +852,45 @@
                             <ul class="blogPosts">
                                 <li><a href="#">
                                         <span class="title ">+9714-8861772</span>
-
+    
                                     </a></li>
                                 <li><a href="#">
                                         <span class="title ">+ 9714-8861773</span>
-
+    
                                     </a></li>
-
+    
                             </ul>
                         </div>
-
+    
                     </div>
                 </div>
-
+    
             </div>
         </div>
         <!-- <div class="stickbar"> -->
-
-
+    
+    
         <!-- </div> -->
-
+    
     </header>
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img src="/images/11.jpg" alt="Company photo"> </div>
+            <div class="swiper-slide"><img src="/images/12.jpg" alt="Company photo"></div>
+            <div class="swiper-slide"><img src="/images/13.jpg" alt="Company photo"></div>
+            <div class="swiper-slide"><img src="/images/14.jpg" alt="Company photo"></div>
+            <div class="swiper-slide"><img src="/images/15.jpg" alt="Company photo"></div>
+    
+        </div>
+        <!-- <div class="swiper-button-next"></div> -->
+        <!-- <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <section class="company-overview">
         <div class="company-overview__company-bg">
 
@@ -1139,53 +1159,27 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-    <!-- // ========== About  ======== -->
-    <script>
 
-        var swiper = new Swiper(".mySwiper2", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-
-
-
-
-        });
-    </script>
-
-    <!-- //  ======== Certification ========= -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-
-            slidesPerView: '4',
-            spaceBetween: 20,
-            slidesPerGroup: 1,
-            centeredSlides: true,
-            // loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+            spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+        disableOnInteraction: false,
             },
-
-            breakpoints: {
-                0: {
-                    slidesPerView: 2,
-                },
-                600: {
-                    slidesPerView: 2,
-                },
-                950: {
-                    slidesPerView: 3,
-                },
-                2000: {
-                    slidesPerView: 8,
-                },
-            }
-
-
+        pagination: {
+            el: ".swiper-pagination",
+        clickable: true,
+            },
+        navigation: {
+            nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+            },
         });
-    </script>
+</script>
+
+   
     <!-- ========== Pre Loader ============ -->
     <script>
         const loader = document.querySelector('.preloader')

@@ -3174,6 +3174,7 @@ div.globalFooterCard.card-radar {
 @media only screen and (max-width: 750px) {
   .company-info__container {
     flex-direction: column;
+    padding: 0 2rem;
   }
   .company-info__image-box--img {
     width: 100%;
