@@ -260,6 +260,12 @@
   color: var(--font-clr);
 }
 
+.favicon {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
 *,
 *::after,
 *::before {
@@ -4675,6 +4681,33 @@ span.text {
   .product__des2 {
     font-size: 0.9rem;
   }
+}
+.division {
+  width: 90vw;
+}
+.division__bg-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/images/gantry-cranes.png);
+  height: 100vh;
+  width: 90%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.division__para {
+  width: 80vw;
+  margin: auto;
+  font-size: var(--font-plus);
+  font-size: 1.3rem;
+  text-align: left;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
