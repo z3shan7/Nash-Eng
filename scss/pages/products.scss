@@ -8,7 +8,7 @@
                 var(--dark-shade-1),
                 var(--dark-shade-3));
 
-        height: 50vh;
+        height: auto;
         width: 70vw;
         border-radius: 10px;
         margin: auto;
@@ -55,7 +55,7 @@
     &__des {
         width: 70vw;
         margin: auto;
-        font-size: var(--font-plus);
+        font-family: var(--font-plus);
         font-size: 1.3rem;
         text-align: left;
         padding-top: 5rem;
@@ -65,7 +65,7 @@
     &__des2 {
         width: 70vw;
         margin: auto;
-        font-size: var(--font-plus);
+        font-family: var(--font-plus);
         font-size: 1.3rem;
         text-align: left;
         // padding-top: 5rem;
@@ -259,10 +259,11 @@
             font-size: 3rem;
 
         }
-                 &__para {
-                     font-size: .7rem;
-        
-                 }
+
+        &__para {
+            font-size: .7rem;
+
+        }
     }
 
 
