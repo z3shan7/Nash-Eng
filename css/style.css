@@ -4649,7 +4649,7 @@ span.text {
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding: 3rem;
+  padding: 1rem 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .product__img {
